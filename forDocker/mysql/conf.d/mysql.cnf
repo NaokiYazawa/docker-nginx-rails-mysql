@@ -1,7 +1,9 @@
 [mysqld]
 default_authentication_plugin = mysql_native_password
+# 新規ユーザー作成時の認証方式
 skip-host-cache
 skip-name-resolve
+# skip-resolve-nameは、接続を受けた際に、認証の目的でクライアントのIPアドレスを逆引きする機能を無効にする設定である。
 
 character-set-server = utf8mb4
 collation-server = utf8mb4_unicode_ci
